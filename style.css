@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,10,0.7), rgba(4,9,10,0.7)), url("images/E05-Zaha-Hadid.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a img{
+    width: 60px;
+    height: 60px;
+    position: center;
+}
+
+.nav-links li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links li a
+{
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.nav-links li::after
+{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: gray;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links li:hover::after
+{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1
+{
+    font-size: 60px;
+    animation: fly-in 1s ease-out;
+}
+/* Define the animation */
+@keyframes fly-in {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: white;
+}
+/* projects */
+.offer
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 80vh;
+position: relative;
+
+}
+.row
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.offer h1
+{
+    font-size: 35px;
+    color: darkgrey;
+    border: 1px solid darkgrey;
+}
+.offer-column
+{
+    flex-basis: 40%;
+    background: lightgrey;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.offer-column:hover
+{
+    box-shadow: 0 0 30px 0px gray;
+}
+.offer-column h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.offer-column p{
+    font-size: 20px;
+}
+#p
+{
+    background-color: black;
+}
+#a
+{
+    background-image: url("images/back123.webp");
+}
+
+.imag
+{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,400px));
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+.imag img
+{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    /*opacity: 0;*/
+    /*transform: translateX(-50%);*/
+    /*animation: slide-in 0.5s ease-in-out forwards;*/
+
+
+}
+.imag img:hover
+{
+    opacity: 0.7;
+}
+
+/*@keyframes slide-in {*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*        transform: translateX(0%);*/
+/*    }*/
+/*}*/
+
+/* ---------------------------CONTACT------------------------------*/
+/* Style for the form container */
+#c{
+    background-image: url("images/Background 11.jpg");
+}
+#contact-form {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    flex-basis: 50%;
+    margin-left: 100px;
+    margin-top: 130px;
+    max-height: 300px;
+}
+
+/* Style for the form labels */
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the form input fields */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Style for the form submit button */
+#contact-form button[type="submit"] {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the success message */
+#contact-form .success-message {
+    color: green;
+}
+
+/* Style for the error message */
+#contact-form .error-message {
+    color: red;
+}
+#our-info
+{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+  flex-basis: 50%;
+    margin-left: 300px;
+    margin-top: 130px;
+    max-height: 300px;
+
+
+
+}
+#our-info label{
+    padding-top: 110px;
+}
+
+#cc
+{
+    display: flex;
+    min-height: 80vh;
+    position: relative;
+
+}
+/* ------------ footer ---------------*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    background-image: url("images/ff2.jpg");
+    padding: 20px;
+    text-align: center;
+  margin-top: auto;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links img {
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
